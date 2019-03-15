@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Accordion;assembly=Syncfusion.Expander.XForms">
+
+    <ContentPage.Content>
+        <syncfusion:SfAccordion>
+            <syncfusion:SfAccordion.Items>
+
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid Padding="10,0,0,10">
+                            <Label TextColor="#495F6E" Text="Invoice Date" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+
+                    <syncfusion:AccordionItem.Content>
+                        <Grid Padding="10,0,0,10" BackgroundColor="#FFFFFF">
+                            <Label TextColor="#303030" Text="11.03 AM, 15 January 2019" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+
+
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid Padding="10,0,10,10">
+                            <Label Text="Item (s)" TextColor="#495F6E" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+
+                    <syncfusion:AccordionItem.Content>
+                        <Grid BackgroundColor="#FFFFFF" Padding="10,0,10,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label TextColor="#303030" Text="2018 Subaru Outback"/>
+                            <Label TextColor="#303030" Text="All-Weather Mats" Grid.Row="1"/>
+                            <Label TextColor="#303030" Text="Door Edge Guard Kit" Grid.Row="2"/>
+                            <Label TextColor="#303030" Text="Rear Bumper Cover" Grid.Row="3"/>
+                            <Label TextColor="#303030" Text="Total Amount Paid" FontAttributes="Bold" Grid.Row="4"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$35,705.00" Grid.Column="1"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$105.00" Grid.Row="1" Grid.Column="1"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$100.00" Grid.Row="2" Grid.Column="1"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$95.00" Grid.Row="3" Grid.Column="1"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$36,000.00" FontAttributes="Bold" Grid.Row="4" Grid.Column="1"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+
+                <syncfusion:AccordionItem>
+                    <syncfusion:AccordionItem.Header>
+                        <Grid Padding="10,0,10,10">
+                            <Label Text="Payment Details" TextColor="#495F6E" HeightRequest="50" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Header>
+
+                    <syncfusion:AccordionItem.Content>
+                        <Grid BackgroundColor="#FFFFFF" Padding="10,0,10,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label TextColor="#303030" Text="Card Payment"/>
+                            <Label TextColor="#303030" Text="Third-Party coupons" Grid.Row="1"/>
+                            <Label TextColor="#303030" Text="Total Amount Paid" FontAttributes="Bold" Grid.Row="2"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$31,000.00" Grid.Column="1"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$5,000.00" Grid.Row="1" Grid.Column="1"/>
+                            <Label TextColor="#303030" HorizontalTextAlignment="End" Text="$36,000.00" FontAttributes="Bold" Grid.Row="2" Grid.Column="1"/>
+                        </Grid>
+                    </syncfusion:AccordionItem.Content>
+                </syncfusion:AccordionItem>
+
+            </syncfusion:SfAccordion.Items>
+        </syncfusion:SfAccordion>
+    </ContentPage.Content>
+</ContentPage>
