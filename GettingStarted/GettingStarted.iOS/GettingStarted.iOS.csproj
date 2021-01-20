@@ -131,9 +131,4 @@
       <Name>GettingStarted</Name>
     </ProjectReference>
   </ItemGroup>
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarGettingStartediOSHideInfoBar="True" />
-    </VisualStudio>
-  </ProjectExtensions>
 </Project>
